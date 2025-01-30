@@ -1,10 +1,10 @@
 
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllerSQL/voucherController')
+const controller = require('../controllerSQL/voucherAckController')
 const auth = require('../config/auth')
 
-router.post('/getVoucherData', controller.getVoucherData)
+router.post('/getVoucherAckData', controller.getVoucherAckData)
 
 
 
