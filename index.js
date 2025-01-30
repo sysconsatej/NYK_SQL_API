@@ -125,6 +125,8 @@ const SQlFormRouter = require("./src/routesSQL/formRoute");
 const SQlMasterRouter = require("./src/routesSQL/masterRoute");
 const postInvoiceData = require("./src/routesSQL/invoiceRoute");
 const postVoucherData = require("./src/routesSQL/voucherRoute");
+const postInvoiceAckData = require("./src/routesSQL/invoiceAckRoute");
+const postVoucherAckData = require("./src/routesSQL/voucherAckRoute");
 const SQLDynamicRouterMiddleware = require("./src/routesSQL/sqlDynamicRouterMiddleware");
 
 app.post("/Sql/api/insertdata", SQLDynamicRouterMiddleware);
@@ -133,7 +135,8 @@ app.use("/Sql/api/FormControl", SQlFormRouter);
 app.use("/Sql/api/master", SQlMasterRouter);
 app.use("/Sql/api/invoice", postInvoiceData);
 app.use("/Sql/api/voucher", postVoucherData);
-
+app.use("/Sql/api/invoiceAck", postInvoiceAckData);
+app.use("/Sql/api/voucherAck", postVoucherAckData);
 
 
 

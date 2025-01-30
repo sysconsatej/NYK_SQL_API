@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Stats</title>
+<style>
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  display: inline-block;
+  width: 300px; /* Adjust width as necessary */
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.percentage-change {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4caf50; /* Green for positive values */
+}
+
+.percentage-change.negative {
+  color: #f44336; /* Red for negative values */
+}
+
+.card-main {
+  margin-top: 20px;
+}
+
+.income {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.goal {
+  color: #999;
+  font-size: 16px;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 10px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #4caf50;
+  border-radius: 5px;
+  height: 10px;
+}
+
+/* Additional styles for Weekly Income, Engaged Users, and Weekly Users cards */
+/* ... */
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <h2>Total Income</h2>
+      <span class="percentage-change positive">+ 78%</span>
+    </div>
+    <div class="card-main">
+      <p class="income">$2,30,568</p>
+      <p class="goal">Weekly Goal</p>
+      <div class="progress-bar"><div class="progress" style="width: 78%;"></div></div>
+    </div>
+  </div>
+  <!-- Repeat the structure above for Weekly Income, Engaged Users, and Weekly Users cards -->
+</body>
+</html>
