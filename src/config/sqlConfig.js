@@ -4,7 +4,7 @@ const sqlConfig = {
   user: process.env.SQL_DB_USER,
   password: process.env.SQL_DB_PASSWORD,
   server: process.env.SQL_SERVER_IP,
-  port: 15666, // Specify the custom port here
+  port: 15999, // Specify the custom port here
   database: process.env.SQLDB,
   options: {
     encrypt: false,
