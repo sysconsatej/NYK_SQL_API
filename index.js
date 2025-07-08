@@ -127,6 +127,8 @@ const postInvoiceData = require("./src/routesSQL/invoiceRoute");
 const postVoucherData = require("./src/routesSQL/voucherRoute");
 const postInvoiceAckData = require("./src/routesSQL/invoiceAckRoute");
 const postVoucherAckData = require("./src/routesSQL/voucherAckRoute");
+const postVoucherNewData = require("./src/routesSQL/voucherNewRoute");
+const postVoucherAckNewData = require("./src/routesSQL/voucherAckNewRoute");
 const SQLDynamicRouterMiddleware = require("./src/routesSQL/sqlDynamicRouterMiddleware");
 
 app.post("/Sql/api/insertdata", SQLDynamicRouterMiddleware);
@@ -137,6 +139,8 @@ app.use("/Sql/api/invoice", postInvoiceData);
 app.use("/Sql/api/voucher", postVoucherData);
 app.use("/Sql/api/invoiceAck", postInvoiceAckData);
 app.use("/Sql/api/voucherAck", postVoucherAckData);
+app.use("/Sql/api/voucherNew", postVoucherNewData);
+app.use("/Sql/api/voucherAckNew", postVoucherAckNewData);
 
 
 
